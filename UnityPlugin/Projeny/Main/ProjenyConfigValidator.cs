@@ -10,10 +10,10 @@ namespace Projeny.Internal
     {
         static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets, string[] movedAssets, string[] movedFromAssetPaths)
         {
-            VerifyProjenyConfig();
+            //VerifyProjenyConfig();
         }
 
-        //[MenuItem("Projeny/Verify Config")]
+        [MenuItem("Projeny/Verify Config")]
         public static void VerifyProjenyConfig()
         {
             VerifyThatAllDirectoriesAreValidJunctions();
